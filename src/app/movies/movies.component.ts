@@ -1,11 +1,14 @@
 import { Component } from "@angular/core";
-
+import { Movies } from "../movie.datasource";
 @Component({
     selector:'movies',
-    templateUrl: './movies.component.html'
+    templateUrl: 'movies.Component.html'
 })
-export class MoviesComponent{
 
+
+export class MoviesComponent{
+  title= 'Movie List';
+  movies= Movies;
 }
 
 
